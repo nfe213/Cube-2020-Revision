@@ -1,0 +1,20 @@
+jQuery(document).ready(function($) {
+
+$('.coe-member-filter-sets').find('a').click(function(e){
+
+    var setstring = $(this).data('setstring');
+
+    //Feed the new data-setstring value and run the ua_coe_get_members() function
+    $.ajax({
+        type: 'post',
+        dataType: 'json',
+        url: ua_coe_submit_request.ajax_url,
+        data: { action: 'coe_get_requested_members', charset: setstring },
+        success: function(response) {
+            $('.tab-content').html(response);
+        }
+    });
+
+});
+
+});

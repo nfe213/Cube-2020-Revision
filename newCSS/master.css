@@ -1,0 +1,196 @@
+:root {--after-bar-offset: 130px;}
+
+.site-content {
+  padding: 0px;
+}
+
+.homePagePicture {
+  width:100%;
+  margin: 0px;
+}
+
+/* Cube Hours Font Sizes, ETC*/
+.hoursEads h3 {
+  color: var(--crimson);
+  font-weight: bold;
+  padding-top: 20px;
+  font-size: 36px;
+  font-family: 'Lato', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.hoursEads h4 {
+  font-size: 22px;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.sticky-header-container {
+  display: sticky;
+  overflow: hidden;
+
+}
+
+.hoursEads p {
+  display: inline-block;
+  margin-bottom: 0px;
+  margin: 0px 3px 0px 3px;
+  font-size: 18px;
+}
+
+span {
+  font-weight: bold;
+}
+
+/* Cube Hours Layout Section */
+.hoursEads {
+  position: relative;
+  text-align: center;
+  margin-bottom: 21px;
+  font-family: "Open Sans", sans-serif;
+  margin: 42px 0px 21px 0px;
+  background-color:
+}
+
+.hoursWrapperEads {
+  width: 70%;
+  margin: 0% 15%;
+  padding-bottom: 30px;
+
+  -webkit-user-select: none; /* Make text non-selectable Safari */
+  -moz-user-select: none; /* Make text non-selectable Firefox */
+  -ms-user-select: none; /* Make text non-selectable IE10+/Edge */
+  user-select: none; /* Make text non-selectable Standard */
+}
+
+.largeLeftColEads {
+  display: inline-block;
+  width: 45%;
+  padding-right: 6%;
+}
+
+.largeRightColEads {
+  display: inline-block;
+  width: 45%;
+  padding-left: 6%;
+
+}
+
+.hoursWrapperEads::before {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    height: 30px;
+    width: 30px;
+
+    content: "";
+    background-image: url(src/brackets.png);
+    background-size: cover;
+}
+
+.hoursWrapperEads::after {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    height: 30px;
+    width: 30px;
+
+    content: "";
+    background-image: url(src/brackets.png);
+    background-size: cover;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+@media (max-width: 1200px) {
+  .seperatorEads {
+    visibility: hidden;
+  }
+  .timeEads {
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .seperatorEads {
+    visibility: visible;
+  }
+  .timeEads {
+    padding-left: 0px;
+  }
+  .largeLeftColEads, .largeRightColEads {
+    display: block;
+    width: 100%;
+    padding: 0px;
+  }
+  .hoursWrapperEads::after {
+    right: 10%;
+  }
+  .hoursWrapperEads::before {
+    left: 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  .hoursWrapperEads::after {
+    right: 10%;
+  }
+  .hoursWrapperEads::before {
+    left: 10%;
+  }
+}
+
+
+/* Cube Description Paragraph */
+.featureTextEads {
+  margin-top: 50px;
+}
+
+/* Button to Forms */
+.btn-wrapper-Eads {
+  width: 80%;
+  margin: 0% 10%;
+}
+
+.btn {
+  min-width: 250px;
+  max-width: 450px;
+  width: 55%;
+  margin: 0% 22.5%;
+  padding: 0% 22.5%;
+  padding: 18px 42px;
+  height: auto;
+  margin-top: 35px;
+
+  line-height: 1.15;
+  background-color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 18px;
+
+  border: solid 3px var(--crimson);
+}
+
+.btn:hover {
+  background: var(--crimson);
+  color: white;
+  border: solid 3px var(--crimson);
+}
+
+@media (max-width: 1000px) {
+  .btn {
+    width: auto;
+    font-size: 16px;
+  }
+}
+
+.noClick {
+  -webkit-user-select: none; /* Make text non-selectable Safari */
+  -moz-user-select: none; /* Make text non-selectable Firefox */
+  -ms-user-select: none; /* Make text non-selectable IE10+/Edge */
+  user-select: none; /* Make text non-selectable Standard */
+}

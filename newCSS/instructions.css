@@ -1,0 +1,14 @@
+p {margin-bottom: 0px}
+
+.pageHeaderWrapperEads {
+  width: 50%;
+}
+
+@media (max-width: 730px) {
+  .pageHeaderWrapperEads {
+    width: 410px;
+  }
+  p {
+    color: red;
+  }
+}

@@ -1,0 +1,89 @@
+:root {--crimson: #900f09;}
+
+
+.breadcrumb-wrapper {
+  background-color: white;
+  border-bottom-color: white;
+}
+
+/* Replacing legacy logo in header & at top of page*/
+.cubeLogoHeaderEads {
+  height: 45px;
+  position: absolute;
+  top: 27.5px;
+  left: 10px;
+  background-color: white;
+}
+
+.pageHeaderWrapperEads {
+  color: #444;
+  padding-top: 20px;
+  font-size: 36px;
+  min-width: 250px;
+  font-family: 'Lato', 'Open Sans', Helvetica, Arial, sans-serif;
+
+  -webkit-user-select: none; /* Make text non-selectable Safari */
+  -moz-user-select: none; /* Make text non-selectable Firefox */
+  -ms-user-select: none; /* Make text non-selectable IE10+/Edge */
+  user-select: none; /* Make text non-selectable Standard */
+}
+
+.headerTextEads {
+  position: relative;
+  margin: 11px 00px 11px 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.headerTextEads::before {
+    position: absolute;
+    top: -10px;
+    left: -50px;
+    height: 30px;
+    width: 30px;
+
+    content: "";
+    background-image: url(src/brackets.png);
+    background-size: cover;
+}
+
+.headerTextEads::after {
+    position: absolute;
+    bottom: -15px;
+    right: -45px;
+    height: 30px;
+    width: 30px;
+
+    content: "";
+    background-image: url(src/brackets.png);
+    background-size: cover;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.directoryEads {
+}
+
+.coeLogoEads {visibility:hidden;}
+
+@media (max-width: 1000px) {
+  .cubeLogoHeaderEads {visibility: hidden;}
+  .coeLogoEads {visibility:visible;}
+}
+
+/* Footer Adjustments */
+.footer-copyright {
+  margin-top: 0px;
+}
+
+footer.bg-alt {
+ padding-top:0px;
+}
+
+/* Remove padding on .site-content */
+.site-content {
+  padding: 20px 0 0 0
+}

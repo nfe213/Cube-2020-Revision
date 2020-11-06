@@ -1,0 +1,246 @@
+.bothSpecialtyPrintersBrokenATMhiddenFromSite {
+  /* As of writing this, the BlackBelt and 460 are both broken this class hides their section. */
+  display: none;
+}
+
+.pageHeaderWrapperEads {  width: 50%  }
+
+@media (max-width: 1200px) {
+    .pageHeaderWrapperEads {
+      width: 300px;
+    }
+    .pageHeaderEads {
+    }
+    .headerTextEads {
+      display: block;
+    }
+    .headerTextEads::before {
+      top: -20px;
+      left: -30px;
+    }
+    .headerTextEads::after {
+      bottom: -20px;
+      right: -20px;
+    }
+}
+
+.notice {
+  line-height: 1.4;
+}
+
+.questionWrapperEads {
+  width: 90%;
+  margin: 0 3%;
+}
+
+.questionEads {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--crimson);
+  font-weight: normal;
+  letter-spacing: 1px;
+  display: inline-block;
+  width: auto;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  transition: .2s;
+}
+
+.questionEads:hover {
+  text-decoration: underline;
+}
+
+.responseEads, .questionEndEads {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  padding-left: 4%;
+  color: #363636;
+  width: 90%;
+}
+
+.responseWrapperEads {
+  display: none;
+
+  -webkit-user-select: none; /* Make text non-selectable Safari */
+  -moz-user-select: none; /* Make text non-selectable Firefox */
+  -ms-user-select: none; /* Make text non-selectable IE10+/Edge */
+  user-select: none; /* Make text non-selectable Standard */
+}
+
+.responseWrapperEads2 {
+  display: none;
+
+  -webkit-user-select: none; /* Make text non-selectable Safari */
+  -moz-user-select: none; /* Make text non-selectable Firefox */
+  -ms-user-select: none; /* Make text non-selectable IE10+/Edge */
+  user-select: none; /* Make text non-selectable Standard */
+}
+
+a {
+  color: var(--crimson);
+}
+
+span, .questionEndEads {
+  font-weight: bold;
+}
+
+.questionEndEads {
+  font-size: 15px;
+}
+
+/* Dropdown Arrows */
+.arrowWrapperEads {
+  width: 50%;
+
+  -webkit-user-select: none; /* Make text non-selectable Safari */
+  -moz-user-select: none; /* Make text non-selectable Firefox */
+  -ms-user-select: none; /* Make text non-selectable IE10+/Edge */
+  user-select: none; /* Make text non-selectable Standard */
+
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 21px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  visibility: hidden;
+  margin-top: 11px;
+
+  -webkit-user-select: none; /* Make text non-selectable Safari */
+  -moz-user-select: none; /* Make text non-selectable Firefox */
+  -ms-user-select: none; /* Make text non-selectable IE10+/Edge */
+  user-select: none; /* Make text non-selectable Standard */
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  position: absolute;
+  margin-top: 11px;
+
+  -webkit-user-select: none; /* Make text non-selectable Safari */
+  -moz-user-select: none; /* Make text non-selectable Firefox */
+  -ms-user-select: none; /* Make text non-selectable IE10+/Edge */
+  user-select: none; /* Make text non-selectable Standard */
+}
+
+th {
+  padding-bottom: 4px;
+  border-width: 1px;
+  border-color: #7C7D7E;
+  border-bottom-style: solid;
+}
+
+td {
+  padding: 11px 0px;
+  border-width: 1px;
+  border-bottom-style: solid;
+  border-color: #C2C3C4;
+}
+
+.hoverable:hover {
+  background-color: #A0A1A290;
+  transition: .15s;
+  cursor: pointer;
+}
+
+.tbl {
+  width: 97%;
+  margin: 0px 1.5%;
+
+  -webkit-user-select: none; /* Make text non-selectable Safari */
+  -moz-user-select: none; /* Make text non-selectable Firefox */
+  -ms-user-select: none; /* Make text non-selectable IE10+/Edge */
+  user-select: none; /* Make text non-selectable Standard */
+
+}
+
+.printerType {
+  font-size: 22px;
+  font-weight: normal;
+  color: #A0A1A2;
+}
+
+.rowPadding {padding-left: 10px}
+.model {width: 11%; padding-right: 2%}
+.count {text-align:center; width: 10%; padding-right: 2%}
+.material {width: 19%; padding-right: 2%}
+.volume {width: 12%; padding-right: 2%}
+.resolution {width: 17%; padding-right: 2%}
+.submit {width: 17%; padding-right: 2%}
+
+.btn {
+  min-width: 350px;
+  width: 50%;
+  margin: 21px 25%;
+  padding: 18px 42px;
+  height: auto;
+  margin-top: 35px;
+
+  line-height: 1.15;
+  background-color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 18px;
+
+  border: solid 3px var(--crimson);
+}
+
+.btn:hover {
+  background: var(--crimson);
+  color: white;
+  border: solid 3px var(--crimson);
+}
+
+.news, .news-v2 {
+  margin-bottom: 16px;
+}
+
+/* Hidden Content - Table Drop Downs */
+.hiddenContentDremel {display: none;}
+.hiddenContents5 {display: none;}
+.hiddenContentMKF {display: none;}
+.hiddenContentDimension {display: none;}
+.hiddenContentForm3 {display: none;}
+.hiddenContent2500 {display: none;}
+.hiddenContent3L {display: none;}
+.hiddenContentBlackBelt {display: none;}
+.hiddenContent460 {display: none;}
+
+.hiddenBody {width:100%}
+
+.hiddenData2,.hiddenData1 {
+  width: 50%;
+}
+
+.printerPic {
+  width: 20%;
+  display: inline-block;
+  float: right;
+  padding-right: 3%;
+}
+
+.hiddenCol {
+  width: 74%;
+  display: inline-block;
+  padding-left: 3%;
+}
+
+.hiddenText, .hiddenSubText {
+  margin: 0px;
+}
+
+.hiddenSubText {
+  padding-top: 11px;
+}

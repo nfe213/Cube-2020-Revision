@@ -1,0 +1,26 @@
+/*
+Theme Name: UA WordPress Theme
+Author: Web Communications
+Author URI: https://strategiccommunications.ua.edu
+Description: The official University of Alabama WordPress theme which is based off the UA Template released in 2016.
+Version: 1.7.4
+*/
+
+.content-box.bg-primary h3,
+.content-box.bg-primary a,
+.content-box.bg-dark h3,
+.content-box.bg-dark a {
+	color: white !important;
+}
+
+a#skip-link {
+	display: block;
+	position: absolute;
+	top: -1000em
+
+}
+
+a#skip-link:focus {
+	top: 0;
+	z-index: 100000000;
+}
