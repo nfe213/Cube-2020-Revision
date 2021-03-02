@@ -21,7 +21,7 @@
     .headerTextEads::after {
       bottom: -20px;
       right: -20px;
-    }
+    }    
 }
 
 .notice {
@@ -179,7 +179,7 @@ td {
 .submit {width: 17%; padding-right: 2%}
 
 .btn {
-  min-width: 350px;
+  min-width: 300px;
   width: 50%;
   margin: 21px 25%;
   padding: 18px 42px;
@@ -244,3 +244,27 @@ td {
 .hiddenSubText {
   padding-top: 11px;
 }
+
+@media (max-width: 1000px) {
+  .btn {
+    width: auto;
+    font-size: 16px;
+    padding: 21px 9px;
+  }
+  a {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 550px) {
+  .count, .information, .submit, .btn {
+    display: none;
+  }
+  .resolution {
+    padding-right: 0px;
+  } 
+  .model {
+    padding-left: 0px;
+  }
+}
+

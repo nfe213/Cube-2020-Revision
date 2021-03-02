@@ -1,6 +1,60 @@
-span, a {  font-weight: bold }
+.bold-span {  font-weight: bold }
 
-.eadsHeaderCol { width: 40%}
+.eadsHeaderCol { width: 40% }
+
+.comparison-container {
+  display: block;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.comparison-head {
+  width: 47%;
+  display: inline-block;
+  text-align: center;
+
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.comparison-p {
+  width: 5%;
+  display: inline-block;
+  text-align: center;
+
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.comp-col-1 {
+  width: 45%;
+  display: inline-flex;
+  margin-left: auto;
+}
+
+.comp-col-2 {
+  width: 45%;
+  padding-left: 5%;
+  display: inline-flex;
+  margin-right: auto;
+}
+
+br {
+  padding-top: 15px;
+}
+
+span.contactUsEads {
+  font-size: 13px;
+}
+
+.notesEads {
+  font-size: 13px;
+}
+
 /* Button to Forms */
 .btn-wrapper-Eads {
   width: 100%;
@@ -45,7 +99,11 @@ span, a {  font-weight: bold }
 
 .formEads {
   width: 100%;
-  height: 1225px;
+  height: 1250px;
+}
+
+.btn-breaker {
+  display: none
 }
 
 @media (max-width: 1200px) {
@@ -53,11 +111,30 @@ span, a {  font-weight: bold }
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
+    padding: 21px 9px;
+  }
+  .comparison-head{
+    width:45%;
+    font-size: 26px;
+  }
+  .btn-breaker {
+    display: block;
   }
 }
 
 @media (max-width: 600px) {
   .btn {
     font-size: 14px;
+  }
+  .comparison-head {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .btn {
+    min-width: 0;
+    width: 80%;
+    margin-left: 10%;
   }
 }

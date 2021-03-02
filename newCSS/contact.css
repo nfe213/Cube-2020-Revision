@@ -10,6 +10,9 @@
   .headerTextEads {
     width: 130px;
   }
+  .headerTextEads::after {
+    right: -65px;
+  }
 }
 
 .contactHead { margin-bottom: 6px }

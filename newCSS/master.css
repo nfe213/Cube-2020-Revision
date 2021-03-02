@@ -188,6 +188,14 @@ span {
   }
 }
 
+@media (max-width: 550px) {
+  .btn {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
 .noClick {
   -webkit-user-select: none; /* Make text non-selectable Safari */
   -moz-user-select: none; /* Make text non-selectable Firefox */

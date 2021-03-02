@@ -8,4 +8,18 @@
 
 .aboutCubePic {
   padding: 0px 11px 11px 11px;
+  width: 400px;
+  height: auto;
+  float: right;
+}
+
+.bullet-pnt-head {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 500px) {
+  .aboutCubePic {
+    width: 100%;
+    display: block;
+  }
 }
